@@ -1,0 +1,364 @@
+@charset "UTF-8";
+/* Scss Document */
+/* line 4, premtab.scss */
+:root {
+  --mdc-theme-primary: #dd6162;
+}
+
+/* line 7, premtab.scss */
+#colorstrip {
+  /* Snaps to Ankit's style guide */
+  width: 100%;
+  height: 430px;
+  border-style: solid;
+  border-color: #f5f5f5;
+  background-color: #f5f5f5;
+}
+
+/* Style the tab */
+/* line 16, premtab.scss */
+div.tab {
+  overflow: hidden;
+  border: 1px solid #cccfff;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+/* line 23, premtab.scss */
+div.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+/* line 35, premtab.scss */
+div.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+/* line 40, premtab.scss */
+div.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+/* line 45, premtab.scss */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/* CSS Document */
+/* line 53, premtab.scss */
+body {
+  background-color: #ffffff;
+  margin: 10px;
+}
+
+/* From webagility */
+/* line 60, premtab.scss */
+form {
+  padding: 10px;
+}
+
+/* line 65, premtab.scss */
+#colorstrip {
+  /* Snaps to Ankit's style guide */
+  width: 100%;
+  height: 430px;
+  border-style: solid;
+  border-color: #f5f5f5;
+  background-color: #f5f5f5;
+}
+
+/* line 73, premtab.scss */
+h1 {
+  color: #313234;
+  /* Snaps to latest Premera CSS */
+  font-size: 2.441rem;
+  font-family: "Lora Regular";
+  font-weight: 400;
+  line-height: inherit;
+  padding-left: 10px;
+}
+
+/* line 81, premtab.scss */
+h2 {
+  color: #313234;
+  font-size: 1.953rem;
+  font-family: "Lora Regular";
+  font-weight: 400;
+  line-height: inherit;
+  padding-left: 10px;
+}
+
+/* line 89, premtab.scss */
+h3 {
+  color: #313234;
+  font-size: 1.563rem;
+  font-family: "Lora Regular";
+  font-weight: 400;
+  line-height: inherit;
+  padding-left: 10px;
+}
+
+/* line 97, premtab.scss */
+h4 {
+  color: #313234;
+  font-size: 1.25rem;
+  font-family: "Lora Regular";
+  font-weight: 400;
+  line-height: inherit;
+  padding-left: 10px;
+}
+
+/* line 105, premtab.scss */
+h5 {
+  color: #313234;
+  font-size: 1.0rem;
+  font-family: "Lora Regular";
+  font-weight: 400;
+  line-height: inherit;
+  padding-left: 10px;
+}
+
+/* line 113, premtab.scss */
+body1 {
+  color: #404144;
+  font-size: 1rem;
+  font-family: 'Roboto Light';
+  font-weight: 300;
+  line-height: inherit;
+  padding-left: 10px;
+}
+
+/* line 121, premtab.scss */
+.mdc-select {
+  height: 48px;
+  width: 430px;
+}
+
+/* line 126, premtab.scss */
+.mdc-text-field {
+  width: 250px;
+}
+
+/* line 130, premtab.scss */
+.mdc-card {
+  display: block;
+  height: auto;
+  width: 1000px;
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* line 141, premtab.scss */
+.mdc-theme-primary {
+  color: #ff7c76;
+}
+
+/* line 145, premtab.scss */
+.mdc-button {
+  color: #ff7c76;
+}
+
+/* line 149, premtab.scss */
+.mdc-button--raised {
+  color: #ff7c76;
+}
+
+/* line 153, premtab.scss */
+.mdc-ripple-surface {
+  color: #ff7c76;
+}
+
+/* line 157, premtab.scss */
+.mdc-ripple-upgraded {
+  color: #ff7c76;
+}
+
+/* line 161, premtab.scss */
+.background-color {
+  color: #ff7c76;
+}
+
+/* line 165, premtab.scss */
+.panels {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+
+/* line 172, premtab.scss */
+.panel {
+  display: none;
+}
+/* line 174, premtab.scss */
+.panel.active {
+  display: block;
+}
+
+/* line 179, premtab.scss */
+p {
+  max-width: 600px;
+  padding: 10px;
+}
+
+/* line 184, premtab.scss */
+.label {
+  max-width: 650px;
+}
+
+/* following section is the mdl table component since MDC-Web does not have a data table yet */
+/* Dialog */
+/* line 191, premtab.scss */
+.mdl-data-table {
+  ΓÇéΓÇéposition: relative;
+  ΓÇéΓÇéborder: 1px solid rgba(0, 0, 0, 0.12);
+  ΓÇéΓÇéborder-collapse: collapse;
+  ΓÇéΓÇéwhite-space: nowrap;
+  ΓÇéΓÇéfont-size: 13px;
+  ΓÇéΓÇébackground-color: white;
+}
+
+/* line 198, premtab.scss */
+ΓÇéΓÇé.mdl-data-table thead {
+  ΓÇéΓÇéΓÇéΓÇépadding-bottom: 3px;
+}
+
+/* line 200, premtab.scss */
+ΓÇéΓÇéΓÇéΓÇé.mdl-data-table thead .mdl-data-table__select {
+  ΓÇéΓÇéΓÇéΓÇéΓÇéΓÇémargin-top: 0;
+}
+
+/* line 202, premtab.scss */
+ΓÇéΓÇé.mdl-data-table tbody tr {
+  ΓÇéΓÇéΓÇéΓÇéposition: relative;
+  ΓÇéΓÇéΓÇéΓÇéheight: 48px;
+  ΓÇéΓÇéΓÇéΓÇétransition-duration: 0.28s;
+  ΓÇéΓÇéΓÇéΓÇétransition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  ΓÇéΓÇéΓÇéΓÇétransition-property: background-color;
+}
+
+/* line 208, premtab.scss */
+ΓÇéΓÇéΓÇéΓÇé.mdl-data-table tbody tr.is-selected {
+  ΓÇéΓÇéΓÇéΓÇéΓÇéΓÇébackground-color: #e0e0e0 ┬á;
+}
+
+/* line 210, premtab.scss */
+ΓÇéΓÇéΓÇéΓÇé.mdl-data-table tbody tr:hover {
+  ΓÇéΓÇéΓÇéΓÇéΓÇéΓÇébackground-color: #eeeeee ┬á;
+}
+
+/* line 212, premtab.scss */
+ΓÇéΓÇé.mdl-data-table td, .mdl-data-table th {
+  ΓÇéΓÇéΓÇéΓÇépadding: 0 18px 12px 18px;
+  ΓÇéΓÇéΓÇéΓÇétext-align: right;
+}
+
+/* line 215, premtab.scss */
+ΓÇéΓÇéΓÇéΓÇé.mdl-data-table td:first-of-type, .mdl-data-table th:first-of-type {
+  ΓÇéΓÇéΓÇéΓÇéΓÇéΓÇépadding-left: 24px;
+}
+
+/* line 217, premtab.scss */
+ΓÇéΓÇéΓÇéΓÇé.mdl-data-table td:last-of-type, .mdl-data-table th:last-of-type {
+  ΓÇéΓÇéΓÇéΓÇéΓÇéΓÇépadding-right: 24px;
+}
+
+/* line 219, premtab.scss */
+ΓÇéΓÇé.mdl-data-table td {
+  ΓÇéΓÇéΓÇéΓÇéposition: relative;
+  ΓÇéΓÇéΓÇéΓÇévertical-align: middle;
+  ΓÇéΓÇéΓÇéΓÇéheight: 48px;
+  ΓÇéΓÇéΓÇéΓÇéborder-top: 1px solid rgba(0, 0, 0, 0.12);
+  ΓÇéΓÇéΓÇéΓÇéborder-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  ΓÇéΓÇéΓÇéΓÇépadding-top: 12px;
+  ΓÇéΓÇéΓÇéΓÇébox-sizing: border-box;
+}
+
+/* line 227, premtab.scss */
+ΓÇéΓÇéΓÇéΓÇé.mdl-data-table td .mdl-data-table__select {
+  ΓÇéΓÇéΓÇéΓÇéΓÇéΓÇévertical-align: middle;
+}
+
+/* line 229, premtab.scss */
+ΓÇéΓÇé.mdl-data-table th {
+  ΓÇéΓÇéΓÇéΓÇéposition: relative;
+  ΓÇéΓÇéΓÇéΓÇévertical-align: bottom;
+  ΓÇéΓÇéΓÇéΓÇétext-overflow: ellipsis;
+  ΓÇéΓÇéΓÇéΓÇéfont-size: 14px;
+  ΓÇéΓÇéΓÇéΓÇéfont-weight: bold;
+  ΓÇéΓÇéΓÇéΓÇéline-height: 24px;
+  ΓÇéΓÇéΓÇéΓÇéletter-spacing: 0;
+  ΓÇéΓÇéΓÇéΓÇéheight: 48px;
+  ΓÇéΓÇéΓÇéΓÇéfont-size: 12px;
+  ΓÇéΓÇéΓÇéΓÇécolor: rgba(0, 0, 0, 0.54);
+  ΓÇéΓÇéΓÇéΓÇépadding-bottom: 8px;
+  ΓÇéΓÇéΓÇéΓÇébox-sizing: border-box;
+}
+
+/* line 242, premtab.scss */
+ΓÇéΓÇéΓÇéΓÇé.mdl-data-table th.mdl-data-table__header--sorted-ascending, .mdl-data-table th.mdl-data-table__header--sorted-descending {
+  ΓÇéΓÇéΓÇéΓÇéΓÇéΓÇécolor: rgba(0, 0, 0, 0.87);
+}
+
+/* line 244, premtab.scss */
+ΓÇéΓÇéΓÇéΓÇéΓÇéΓÇé.mdl-data-table th.mdl-data-table__header--sorted-ascending:before, .mdl-data-table th.mdl-data-table__header--sorted-descending:before {
+  ΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéfont-family: 'Material Icons';
+  ΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéfont-weight: normal;
+  ΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéfont-style: normal;
+  ΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéfont-size: 24px;
+  ΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéline-height: 1;
+  ΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéletter-spacing: normal;
+  ΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéΓÇétext-transform: none;
+  ΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéΓÇédisplay: inline-block;
+  ΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéword-wrap: normal;
+  ΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéΓÇé-moz-font-feature-settings: 'liga';
+  ΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéΓÇé-webkit-font-feature-settings: 'liga';
+  ΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéΓÇé-webkit-font-smoothing: antialiased;
+  ΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéfont-size: 16px;
+  ΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéΓÇécontent: "\e5d8";
+  ΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéΓÇémargin-right: 5px;
+  ΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéΓÇévertical-align: sub;
+}
+
+/* line 261, premtab.scss */
+ΓÇéΓÇéΓÇéΓÇéΓÇéΓÇé.mdl-data-table th.mdl-data-table__header--sorted-ascending:hover, .mdl-data-table th.mdl-data-table__header--sorted-descending:hover {
+  ΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéΓÇécursor: pointer;
+}
+
+/* line 263, premtab.scss */
+ΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéΓÇé.mdl-data-table th.mdl-data-table__header--sorted-ascending:hover:before, .mdl-data-table th.mdl-data-table__header--sorted-descending:hover:before {
+  ΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéΓÇéΓÇécolor: rgba(0, 0, 0, 0.26);
+}
+
+/* line 265, premtab.scss */
+ΓÇéΓÇéΓÇéΓÇé.mdl-data-table th.mdl-data-table__header--sorted-descending:before {
+  ΓÇéΓÇéΓÇéΓÇéΓÇéΓÇécontent: "\e5db";
+}
+
+/* line 268, premtab.scss */
+.mdl-data-table__select {
+  ΓÇéΓÇéwidth: 16px;
+}
+
+/* line 271, premtab.scss */
+.mdl-data-table__cell--non-numeric.mdl-data-table__cell--non-numeric {
+  ΓÇéΓÇétext-align: left;
+}
+
+/*# sourceMappingURL=premtab.css.map */

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html class="mdc-typography">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Premera Vision Claims</title>
+	  <link
+      rel="stylesheet"
+      href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+	
+	<link rel="stylesheet" href="premtab.css">
+		  
+	  <!-- Following link brings in the GMD icon font -->
+	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+	
+<body>
+
+	<div id="colorstrip"/> <!-- adding the color bar across the top of the page -->
+		
+	<img src="http://www.premera.com/images/shared/logos/logo_pbc.svg" alt="Premera logo" width="221" height="60">
+	<h1>Submit Vision Claims</h1>
+
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'Date')" id="defaultOpen">Date</button>
+  <button class="tablinks" onclick="openTab(event, 'Member')">Member</button>
+  <button class="tablinks" onclick="openTab(event, 'Attachments')">Attachments</button>
+  <button class="tablinks" onclick="openTab(event, 'Details')">Details</button>
+  <button class="tablinks" onclick="openTab(event, 'Review')">Review</button>
+</div>
+
+<div id="Date" class="tabcontent">
+	<h3>Enter date of service</h3>
+
+	<div class=".body1">Did the member have services on multiple dates from the same provider?</div>
+	
+			<div class="mdc-radio">
+ 			 <input class="mdc-radio__native-control" type="radio" id="radio-1" name="radios" checked>
+  				<div class="mdc-radio__background">
+   				 <div class="mdc-radio__outer-circle"></div>
+    			<div class="mdc-radio__inner-circle"></div>
+  				</div>
+			</div>
+			<label id="radio-1-label" for="radio-1">Yes</label>
+						
+
+			<div class="mdc-radio">
+			  <input class="mdc-radio__native-control" type="radio" id="radio-2" name="radios">
+			  <div class="mdc-radio__background">
+  			  	<div class="mdc-radio__outer-circle"></div>
+   			 	<div class="mdc-radio__inner-circle"></div>
+ 			 </div>
+			</div>
+			<label id="radio-2-label" for="radio-2">No</label>	 
+	<p></p>
+			
+			<p>Enter the oldest and most recent dates of service. It won't be necessary to enter every date of service. Services must be from the same <strong>provider</strong>, for the same <strong>member</strong>, and <strong>within 12 months</strong> of the date of service to submit on one form.</p>
+	
+				<div class="mdc-form-field"> <!-- would like to make this a full width text field but the code from google is not working -->
+				<div class="mdc-text-field mdc-text-field--upgraded mdc-text-field--with-trailing-icon" data-mdc-auto-init="MDCTextField">
+			  		<input id="oldestservicedate" type="text" class="mdc-text-field__input">
+					<label for="oldestservicedate" class="mdc-text-field__label">
+						Oldest date of service
+					</label>
+					<i class="material-icons mdc-text-field__icon" tabindex="0">event</i>
+			  		<div class="mdc-text-field__bottom-line"></div>
+		    	</div>
+			</div>
+	
+					<div class="mdc-form-field"> <!-- would like to make this a full width text field but the code from google is not working -->
+				<div class="mdc-text-field mdc-text-field--upgraded mdc-text-field--with-trailing-icon" data-mdc-auto-init="MDCTextField">
+			  		<input id="recentservicedate" type="text" class="mdc-text-field__input">
+					<label for="recentservicedate" class="mdc-text-field__label">
+						Most recent date of service
+					</label>
+					<i class="material-icons mdc-text-field__icon" tabindex="0">event</i>
+			  		<div class="mdc-text-field__bottom-line"></div>
+		    	</div>
+			</div>
+			<p></p>
+	
+			<button type="submit"
+				class="mdc-button
+					mdc-button--text
+				 	mdc-ripple-surface"
+				 	data-mdc-auto-init="MDCRipple">
+		  Back
+		  	</button>
+		  
+		  	<button type="submit"
+				class="mdc-button
+					mdc-button--raised
+					mdc-ripple-surface"
+				  	data-mdc-auto-init="MDCRipple">
+		  Next
+		  </button>
+		
+	
+	</div>
+
+<div id="Member" class="tabcontent">
+  <h3>Who is this claim for?</h3>
+
+			<!-- Google select with mdc activation - not currently opening. Check account creation version and associated JS -->
+			<p>
+			
+			</p><div class="mdc-select" role="listbox" tabindex="0" data-mdc-auto-init="MDCSelect" style="width: 337px;">
+ 				 <span class="mdc-select__selected-text">Select family member</span>
+ 				 <div class="mdc-simple-menu mdc-select__menu">
+    				<ul class="mdc-list mdc-simple-menu__items">
+      					<li class="mdc-list-item" role="option" id="default1" aria-disabled="true">
+        					Select family member
+      					</li>
+      					<li class="mdc-list-item" role="option" id="arturo" tabindex="0">
+        					Arturo Johnson (1/15/2004)
+      					</li>
+      					<li class="mdc-list-item" role="option" id="amy" tabindex="0">
+        					Amy Johnson (12/1/1984)
+      					</li>
+      					<li class="mdc-list-item" role="option" id="isabel" tabindex="0">
+        					Isabel Fredericks-Johnson (8/13/2007)
+      					</li>
+      					<li class="mdc-list-item" role="option" id="jon" tabindex="0">
+        					Jon Johnson (10/5/1973)
+      					</li>
+      				</ul>
+  				</div>
+			</div>
+		<p></p>
+	
+		<div class=".body1">Does the member have coverage from any other health plan?</div>
+	
+			<div class="mdc-radio">
+ 			 <input class="mdc-radio__native-control" type="radio" id="radio-3" name="radios" checked>
+  				<div class="mdc-radio__background">
+   				 <div class="mdc-radio__outer-circle"></div>
+    			<div class="mdc-radio__inner-circle"></div>
+  				</div>
+			</div>
+			<label id="radio-3-label" for="radio-3">Yes</label>
+						
+		
+			<div class="mdc-radio">
+			  <input class="mdc-radio__native-control" type="radio" id="radio-4" name="radios">
+			  <div class="mdc-radio__background">
+  			  	<div class="mdc-radio__outer-circle"></div>
+   			 	<div class="mdc-radio__inner-circle"></div>
+ 			 </div>
+			</div>
+			<label id="radio-4-label" for="radio-4">No</label>
+		<p>
+			<button type="submit"
+				class="mdc-button
+					mdc-button--text
+				 	mdc-ripple-surface"
+				 	data-mdc-auto-init="MDCRipple">
+			  Back
+		  	</button>
+		
+		  
+		  	<button type="submit"
+				class="mdc-button
+					mdc-button--raised
+					mdc-ripple-surface"
+				  	data-mdc-auto-init="MDCRipple">
+		  Next
+		  </button>
+		</p>
+</div>
+
+<div id="Attachments" class="tabcontent">
+  <h3>Attach files</h3>
+  <p><strong>Itemized bills</strong></p>
+	<p>Submit an itemized bill containing:</p>
+	<ul>
+		<li>Name of the member</li>
+		<li>Name and address of the provider</li>
+		<li>Date of service</li>
+		<li>Itemized charges for all services and items purchased</li>		
+	</ul>
+<!-- MDC-Web does not have a data table yet. The workaround is to use the MDL data table -->
+	<table class="mdl-data-table mdl-js-data-table mdl-data-table__select">
+		<col width="300">
+		<col width="60">
+		<col width="80">
+		<col width="20">
+		<thead>
+			<tr>
+				<th class="mdl-data-table__cell--non-numeric">File name</th>
+				<th>Size</th>
+				<th>Status</th>
+				<th>Remove</th>
+			</tr>		
+		</thead>
+		<tbody>
+			<tr data-mdl-data-table-selectable-name="materials[]" data-mdl-data-table-selectable-value="acrylic">
+				<td class="mdl-data-table__cell--non-numeric">Dr Jones Bill Feb 1    </td>
+				<td>2MB    </td>
+				<td>Complete    </td>
+				<td><i class="material-icons">delete</i></td>
+			</tr>
+			<tr data-mdl-data-table-selectable-name="materials[]" data-mdl-data-table-selectable-value="acrylic">
+				<td class="mdl-data-table__cell--non-numeric">Dr Jones Bill May_7    </td>
+				<td>2MB    </td>
+				<td>Complete    </td>
+				<td><i class="material-icons">delete</i></td>
+			</tr>
+			
+			<tr data-mdl-data-table-selectable-name="materials[]" data-mdl-data-table-selectable-value="acrylic">
+				<td class="mdl-data-table__cell--non-numeric">Dr Jones Explanation of Benefits</td>
+				<td>2MB    </td>
+				<td>Complete    </td>
+				<td><i class="material-icons">delete</i></td>
+			</tr>		
+		</tbody>	
+	</table>
+	<p>4MB remaining</p>
+	<p>
+		<button type="submit"
+			class="mdc-button
+				mdc-button--text
+			 	mdc-ripple-surface"
+			 	data-mdc-auto-init="MDCRipple">
+			  Attach additional files
+		  	</button>
+		</p>
+	
+	<p><i>Upload supporting documents up to a maximum of 10MB. Please don't modify the itemized bill as it could delay claim processing.</i></p>
+	
+		<p>
+			<button type="submit"
+				class="mdc-button
+					mdc-button--text
+				 	mdc-ripple-surface"
+				 	data-mdc-auto-init="MDCRipple">
+			  Back
+		  	</button>
+		
+		  
+		  	<button type="submit"
+				class="mdc-button
+					mdc-button--raised
+					mdc-ripple-surface"
+				  	data-mdc-auto-init="MDCRipple">
+		  Next
+		  </button>
+		</p>	
+</div>
+	
+<div id="Details" class="tabcontent">
+  <h3>Additional details</h3>
+  <p>What services were performed?</p>
+	
+	<div class="mdc-form-field">
+  		<div class="mdc-checkbox">
+    		<input type="checkbox" id="eye-exam" class="mdc-checkbox__native-control">
+ 			   <div class="mdc-checkbox__background">
+  				    <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+ 				       <path class="mdc-checkbox__checkmark__path" fill="none" stroke="white" d="M1.73,12.91 8.1,19.28 22.79,4.59"></path>
+ 				     </svg>
+		      <div class="mdc-checkbox__mixedmark"></div>
+		    </div>
+		  </div>
+		
+ 		 <label for="eye-exam" class="label">Routine eye exam</label>
+			
+	</div>
+	<p></p>	
+		<div class="mdc-form-field">
+  		<div class="mdc-checkbox">
+    		<input type="checkbox" id="vision" class="mdc-checkbox__native-control">
+ 			   <div class="mdc-checkbox__background">
+  				    <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+ 				       <path class="mdc-checkbox__checkmark__path" fill="none" stroke="white" d="M1.73,12.91 8.1,19.28 22.79,4.59"></path>
+ 				     </svg>
+		      <div class="mdc-checkbox__mixedmark"></div>
+		    </div>
+		  </div>
+		
+ 		 <label for="vision" class="label">Vision hardware</label>
+				
+	</div>
+
+			<p>
+			<button type="submit"
+				class="mdc-button
+					mdc-button--text
+				 	mdc-ripple-surface"
+				 	data-mdc-auto-init="MDCRipple">
+			  Back
+		  	</button>
+		
+		  
+		  	<button type="submit"
+				class="mdc-button
+					mdc-button--raised
+					mdc-ripple-surface"
+				  	data-mdc-auto-init="MDCRipple">
+		  Next
+		  </button>
+		</p>	
+	
+</div>
+
+<div id="Review" class="tabcontent">
+  <h3>Review and submit</h3>
+  <h4>Claim summary</h4>
+	<h5>Dates of Service</h5>
+	  <p>02/01/17 - 05/07/2017</p>
+	
+	<h5>Family member</h5>
+	  <p>Evelyn Jacobs</p>
+	
+		<h5>Claim details</h5>
+	  <p>Service provided: Routine exam</p>
+	
+		<h5>Files</h5>
+	  <p>Dr Jones Explanation of Benefits</p>
+	  <p>Dr Jones Bill Feb 1</p>
+	  <p>Dr Jones Bill May 7</p>
+	
+  <h5>Agreement</h5>	
+		<div class="mdc-form-field">
+  		<div class="mdc-checkbox">
+    		<input type="checkbox" id="agreement" class="mdc-checkbox__native-control">
+ 			   <div class="mdc-checkbox__background">
+  				    <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+ 				       <path class="mdc-checkbox__checkmark__path" fill="none" stroke="white" d="M1.73,12.91 8.1,19.28 22.79,4.59"></path>
+ 				     </svg>
+		      <div class="mdc-checkbox__mixedmark"></div>
+		    </div>
+		  </div>
+		
+ 		 <label for="agreement" class="label"><strong>I have read and agree to the following statement:</strong> <i>It is a crime to knowingly provide false, incomplete, or misleading information to an insurance company for the purpose of defrauding the company. Penalties include imprisonment, fines, and denial of insurance benefits.</i></label>
+				
+	</div>	
+	
+  <p>
+	<button type="submit"
+		class="mdc-button
+		mdc-button--text
+	 	mdc-ripple-surface"
+		data-mdc-auto-init="MDCRipple">
+		  Back
+	</button>
+				  
+	<button type="submit"
+		class="mdc-button
+		mdc-button--raised
+		mdc-ripple-surface"
+	  	data-mdc-auto-init="MDCRipple">
+		  Submit
+	</button>
+  </p>	
+</div>
+	
+	
+	
+	
+<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script> <!-- git bug 1582 answer provided this syntax to get the latest JS components -->
+
+<script type="text/javascript">window.mdc.autoInit();</script> 
+	
+
+
+<script>
+	
+function openTab(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+	}
+	
+	// Get the element with id="defaultOpen" and click on it
+	document.getElementById("defaultOpen").click();
+	
+</script>
+     
+</body>
+</html> 
